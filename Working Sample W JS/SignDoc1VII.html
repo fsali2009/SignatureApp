@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>HTML Signature Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet href=signDoc.css>
+    <script src=signDoc1.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <!-- Bootstrap links -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- End of Boostrop Links  -->
+
+</head>
+<header>
+    <div class="col-md-12 topSign">
+        <div class="logo">
+            <img src="https://i.postimg.cc/7ZwBRRSS/GPA-Logo-no-slogan-OUT.jpg" width="100" height="" alt="GPA Logo">
+        </div>
+        <h2>Welcome to the Signature Doc! </h2>
+    </div>
+</header>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-10 enterInfo">
+            <div class="row">
+                <div class="col-md-10 instructionForm">
+                    <h3>Enter your business contact information below. &nbsp; &nbsp;This will generate html for your
+                        email signature.</h3><br>
+
+                    <form onsubmit="return results();" method "post" action="#">
+                        <div class="formLeft">
+                            First name<br>
+                            <input id="firstname" type="text" class="form-control" placeholder="Enter First Name" name="firstname"
+                                required>
+                            <br>
+                            Last name<br>
+                            <input id="lastname" type="text" class="form-control" placeholder="Enter Last Name" name="lastname"
+                                required>
+                            <br>
+                            Title<br>
+                            <input id="title" type="text" class="form-control" placeholder="Enter your title" name="title"
+                                required>
+                            <br><br>
+                        </div>
+
+                        <div class="formRight">
+                            Email<br>
+                            <input id="email" type="email" class="form-control" placeholder="Enter email" name="email"
+                                required>
+                            <br>
+                            Office Phone Number&nbsp; &nbsp;(format: xxx-xxx-xxxx)<br>
+                            <input id="ophone" type="tel" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" class="form-control"
+                                placeholder="Enter office number" name="ophone">
+
+                            <br>
+                            Business Mobile Number &nbsp; &nbsp;(format: xxx-xxx-xxxx)<br>
+                            <input id="mphone" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required class="form-control"
+                                placeholder="Enter mobile number" name="mphone" required>
+                            <br><br>
+                        </div>
+                        <div class="bottomForm">
+                            <label for="department">Department</label></br>
+                            <select id="department">
+                                <option value="BusinessDevelopment">Business Development</option>
+                                <option value="Credit">Credit </option>
+                                <option value="CustomerService">Customer Service</option>
+                                <option value="PurchasingMerchandizing">Purchasing / Merchandising </option>
+                                <option value="Accounting">Accounting </option>
+                                <option value="Marketing">Marketing </option>
+                                <option value="Operations">Operations </option>
+                            </select><br><br>
+                        </div>
+                        <div class="bottom-instructions">
+                            <p>Please review your information. Once you have confirmed that all is correct you may hit
+                                submit.</p>
+
+                            <p>Thank you,</p>
+                            <p><strong>Your friends at GPA</strong></p>
+                        </div><br>
+                        <input id="submit" onclick="myFunction() " type="submit" class="btn btn-default" name="submit"
+                            value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
